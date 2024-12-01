@@ -1,11 +1,6 @@
 /my-website
     index.html
-    image.jpg (ảnh banner)
-    /images
-        product1.jpg
-        product2.jpg
-        product3.jpg
-        ...
+    image.jpg
 
 
 <!DOCTYPE html>
@@ -13,179 +8,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Bán Hàng</title>
+    <title>Trang Web Của Tôi</title>
     <style>
-        /* Cấu hình chung cho body */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-        }
-
-        /* Header (Phần tiêu đề) */
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
             text-align: center;
+            background-color: #f4f4f4;
         }
-
-        header h1 {
-            margin: 0;
-        }
-
-        /* Thanh điều hướng */
-        nav {
-            background-color: #444;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 15px;
-            margin: 0 10px;
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        /* Phần chính của trang */
-        .main-content {
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        /* Phần sản phẩm */
-        .product-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            max-width: 1200px;
-            width: 100%;
-            margin: 0 auto;
-        }
-
-        .product {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            text-align: center;
-        }
-
-        .product img {
-            width: 100%;
+        img {
+            max-width: 100%;
             height: auto;
-        }
-
-        .product-info {
-            padding: 15px;
-        }
-
-        .product-info h3 {
-            margin: 10px 0;
-            color: #333;
-        }
-
-        .product-info p {
-            color: #555;
-            font-size: 14px;
-        }
-
-        .price {
-            font-size: 18px;
-            color: #e74c3c;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        .add-to-cart {
-            background-color: #27ae60;
-            color: white;
-            border: none;
-            padding: 10px;
-            width: 100%;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .add-to-cart:hover {
-            background-color: #2ecc71;
-        }
-
-        /* Footer (Phần chân trang) */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Chào Mừng Đến Với Cửa Hàng Của Chúng Tôi</h1>
-        <p>Những sản phẩm chất lượng với giá cả hợp lý</p>
-    </header>
-
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="#home">Trang Chủ</a>
-        <a href="#products">Sản Phẩm</a>
-        <a href="#contact">Liên Hệ</a>
-    </nav>
-
-    <!-- Main Content -->
-    <div class="main-content">
-        <div class="product-container" id="products">
-            <!-- Product 1 -->
-            <div class="product">
-                <img src="images/product1.jpg" alt="Sản phẩm 1">
-                <div class="product-info">
-                    <h3>Sản Phẩm 1</h3>
-                    <p>Mô tả sản phẩm 1 ngắn gọn...</p>
-                    <div class="price">$29.99</div>
-                    <button class="add-to-cart">Thêm vào giỏ hàng</button>
-                </div>
-            </div>
-
-            <!-- Product 2 -->
-            <div class="product">
-                <img src="images/product2.jpg" alt="Sản phẩm 2">
-                <div class="product-info">
-                    <h3>Sản Phẩm 2</h3>
-                    <p>Mô tả sản phẩm 2 ngắn gọn...</p>
-                    <div class="price">$49.99</div>
-                    <button class="add-to-cart">Thêm vào giỏ hàng</button>
-                </div>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="product">
-                <img src="images/product3.jpg" alt="Sản phẩm 3">
-                <div class="product-info">
-                    <h3>Sản Phẩm 3</h3>
-                    <p>Mô tả sản phẩm 3 ngắn gọn...</p>
-                    <div class="price">$39.99</div>
-                    <button class="add-to-cart">Thêm vào giỏ hàng</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Cửa Hàng Của Chúng Tôi. Tất cả quyền được bảo lưu.</p>
-    </footer>
+    <h1>Welcome to my website</h1>
+    <p>This is a beautiful picture of the Milky Way.</p>
+    <!-- Đảm bảo image.jpg nằm cùng thư mục với file HTML -->
+    <img src="image.jpg" alt="Mô tả hình ảnh">
 </body>
 </html>
-
